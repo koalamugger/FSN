@@ -1,12 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="fsn.recruiter" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FSN-Marketing-App</name>
-    <description>
-        A basic Framework7 template for PhoneGap.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
+		<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = "fsn.recruiter"
+		versionCode=""
+		version   = "1.0.0">
+		<name>FSN Connect		</name>
+		<description>Marketing and recruiting application for The Financial Services Network		</description>
+		<author href="www.fsn-box.com" email="jpearson@fsnweb.com">Joe Pearson		</author>
 		<feature name="http://api.phonegap.com/1.0/battery" />
 		<feature name="http://api.phonegap.com/1.0/camera" />
 		<feature name="http://api.phonegap.com/1.0/contacts" />
@@ -18,7 +19,6 @@
 		<plugin name="cordova-plugin-console"  />
 		<plugin name="cordova-plugin-statusbar"  spec="~1.0.1" />
 		<plugin name="undefined" version="~1.2.0" source="npm"  />
-		<plugin name="undefined" version="~3.0.0" source="npm"  />
 		<preference name="phonegap-version" value="cli-6.3.0" />
 		<preference name="android-build-tool" value="gradle" />
 		<preference name="orientation" value="default" />
