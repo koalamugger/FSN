@@ -5,7 +5,7 @@
 		id        = "fsn.recruiter"
 		versionCode=""
 		version   = "1.0.0">
-		<name>FSN Connect		</name>
+    <name>FSN-Marketing-App</name>
 		<description>Marketing and recruiting application for The Financial Services Network		</description>
 		<author href="www.fsn-box.com" email="jpearson@fsnweb.com">Joe Pearson		</author>
 		<feature name="http://api.phonegap.com/1.0/battery" />
