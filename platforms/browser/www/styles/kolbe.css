@@ -1,0 +1,185 @@
+
+.graphTest {
+  width: 100%;
+  margin: 100px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+}
+.graphTest > div {
+  flex: 1 1 auto;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #777;
+}
+
+.gd span {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  width: 10px;
+  height: 40px;
+}
+.gd span:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+}
+.gd[data-value=r10] span:before {
+  height: 15%;
+  background: #871B00;
+}
+.gd[data-value=r11] span:before {
+  height: 15%;
+  background: #000987;
+}
+.gd[data-value=r12] span:before {
+  height: 15%;
+  background: #00872A;
+}
+.gd[data-value=r13] span:before {
+  height: 15%;
+  background: #DBCC00;
+}
+.gd[data-value=r20] span:before {
+  height: 25%;
+  background: #871B00;
+}
+.gd[data-value=r21] span:before {
+  height: 25%;
+  background: #000987;
+}
+.gd[data-value=r22] span:before {
+  height: 25%;
+  background: #00872A;
+}
+.gd[data-value=r23] span:before {
+  height: 25%;
+  background: #DBCC00;
+}
+.gd[data-value=r30] span:before {
+  height: 35%;
+  background: #871B00;
+}
+.gd[data-value=r31] span:before {
+  height: 35%;
+  background: #000987;
+}
+.gd[data-value=r32] span:before {
+  height: 35%;
+  background: #00872A;
+}
+.gd[data-value=r33] span:before {
+  height: 35%;
+  background: #DBCC00;
+}
+.gd[data-value=r40] span:before {
+  height: 45%;
+  background: #871B00;
+}
+.gd[data-value=r41] span:before {
+  height: 45%;
+  background: #000987;
+}
+.gd[data-value=r42] span:before {
+  height: 45%;
+  background: #00872A;
+}
+.gd[data-value=r43] span:before {
+  height: 45%;
+  background: #DBCC00;
+}
+
+.gd[data-value=r50] span:before {
+  height: 55%;
+  background: #871B00;
+}
+.gd[data-value=r51] span:before {
+  height: 55%;
+  background: #000987;
+}
+.gd[data-value=r52] span:before {
+  height: 55%;
+  background: #00872A;
+}
+.gd[data-value=r53] span:before {
+  height: 55%;
+  background: #DBCC00;
+}
+.gd[data-value=r60] span:before {
+  height: 65%;
+  background: #871B00;
+}
+.gd[data-value=r61] span:before {
+  height: 65%;
+  background: #000987;
+}
+.gd[data-value=r62] span:before {
+  height: 65%;
+  background: #00872A;
+}
+.gd[data-value=r63] span:before {
+  height: 65%;
+  background: #DBCC00;
+}
+
+.gd[data-value=r70] span:before {
+  height: 75%;
+  background: #871B00;
+}
+.gd[data-value=r71] span:before {
+  height: 75%;
+  background: #000987;
+}
+.gd[data-value=r72] span:before {
+  height: 75%;
+  background: #00872A;
+}
+.gd[data-value=r73] span:before {
+  height: 75%;
+  background: #DBCC00;
+}
+.gd[data-value=r80] span:before {
+  height: 85%;
+  background: #871B00;
+}
+.gd[data-value=r81] span:before {
+  height: 85%;
+  background: #000987;
+}
+.gd[data-value=r82] span:before {
+  height: 85%;
+  background: #00872A;
+}
+.gd[data-value=r83] span:before {
+  height: 85%;
+  background: #DBCC00;
+}
+
+.gd[data-value=r90] span:before {
+  height: 95%;
+  background: #871B00;
+}
+.gd[data-value=r91] span:before {
+  height: 95%;
+  background: #000987;
+}
+.gd[data-value=r92] span:before {
+  height: 95%;
+  background: #00872A;
+}
+.gd[data-value=r93] span:before {
+  height: 95%;
+  background: #DBCC00;
+}
+
+
+.gd[data-value=r100] span:before {
+  height: 95%;
+  background: #7ae166;
+}

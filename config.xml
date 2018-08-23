@@ -29,6 +29,7 @@
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <platform name="ios">
+        <icon src="www/images/FSN-Logo.png" platform="ios" width="57" height="57" density="mdpi" />
   ...
   <config-file platform="ios" target="*-Info.plist" parent="NSCameraUsageDescription">
     <string>Use camera for video calling</string>

@@ -207,6 +207,11 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 	background-repeat:no-repeat;
 	background-size:51px 44px;
 }
+.numbers-notification{
+	background-image:url(../images/misc/numbers.png);
+	background-repeat:no-repeat;
+	background-size:51px 44px;
+}
 
 .page-notifications h4{
 	font-family:'Dosis', sans-serif!important;

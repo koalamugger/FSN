@@ -35,11 +35,15 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 	z-index:10;
 	display:block;
 	min-height:580px;
+
+
 }
 
 @media(min-width:768px){
 	.page-content{
 		min-height:1000px;	
+		padding:0px;
+
 	}
 }
 
@@ -47,8 +51,9 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 	display:block;
 	margin-top:0px;
 	margin-bottom:0px;
-	padding:20px;
-	padding-bottom:15px;
+	margin-left: 0px;
+	padding: 0px;
+
 }
 
 
@@ -82,12 +87,16 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 	width:100%;
 	background-color:#34495e;
 	height:60px;
-	padding-bottom:20px;
+	padding-bottom:0px;
 	z-index:99999;
+	
 }
 
 .content{
-	margin-top:60px;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-top:0px;
+	width: 100%;
 }
 
 
@@ -166,7 +175,7 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 
 .sidebar-navigation{
 	width:250px;
-	margin-bottom:20px;
+	margin-bottom:50px;
 }
 
 .sidebar-icon{
@@ -175,6 +184,7 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 	height:80px;
 	width:70px;
 	float:left;	
+
 }
 
 .sidebar-title{
@@ -188,24 +198,28 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 	background-image:url(../images/misc/notification_warning.png);
 	background-repeat:no-repeat;
 	background-size:51px 44px;
+	padding-top: 10px;
 }
 
 .information-notification{
 	background-image:url(../images/misc/notification_info.png);
 	background-repeat:no-repeat;
 	background-size:51px 44px;
+		padding-top: 10px;
 }
 
 .alert-notification{
 	background-image:url(../images/misc/notification_alert.png);
 	background-repeat:no-repeat;
 	background-size:51px 44px;
+		padding-top: 10px;
 }
 
 .confirmation-notification{
 	background-image:url(../images/misc/notification_ok.png);
 	background-repeat:no-repeat;
 	background-size:51px 44px;
+		padding-top: 10px;
 }
 
 .page-notifications h4{
