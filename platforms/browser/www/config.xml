@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="fsn.recruiter" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FSN-Marketing-App</name>
+<widget id="com.quickblox.cordova.video_chat" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Device">
+        <param name="browser-package" value="Device" />
+    </feature>
+    <name>QB Video Chat</name>
     <description>
-        A basic Framework7 template for PhoneGap.
+        QuickBlox Apache Cordova simple code sample for Web Video (WebRTC) Chat (via QuickBlox SDK + API)
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="assist@quickblox.com" href="https://quickblox.com">
+       QuickBlox Team
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -15,5 +18,4 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="DisallowOverscroll" value="true" />
 </widget>

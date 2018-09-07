@@ -1,29 +1,75 @@
-# Framework7 PhoneGap Application 
+# QuickBlox JavaScript SDK
 
-> [Framework7](http://www.idangero.us/framework7) is a Mobile UI framework that can be used to build hybrid apps with PhoneGap. This template allows you to get started using Framework7 
-  quickly. 
-  
-  For a more extensive Framework7 sample, see the [one included in their Github project](https://github.com/nolimits4web/Framework7/tree/master/dist)
-  or the [demo apps on their website](http://www.idangero.us/framework7/apps/#.VpQCc5MrKjQ).
-    
-  Also, for an intro to Framework7, check out [this post on the PhoneGap blog](http://phonegap.com/blog/2015/11/30/framework7/).   
+[![travis-ci](https://api.travis-ci.org/QuickBlox/quickblox-javascript-sdk.svg?branch=gh-pages)](https://travis-ci.org/QuickBlox/quickblox-javascript-sdk)
+[![Code Climate](https://codeclimate.com/github/QuickBlox/quickblox-javascript-sdk/badges/gpa.svg)](https://codeclimate.com/github/QuickBlox/quickblox-javascript-sdk)
+[![npm](https://img.shields.io/npm/v/quickblox.svg)](https://www.npmjs.com/package/quickblox)
+[![npm](https://img.shields.io/npm/dm/quickblox.svg)](https://www.npmjs.com/package/quickblox)
 
+The QuickBlox JavaScript SDK provides a JavaScript library making it even easier to access the QuickBlox cloud communication backend platform.
 
-## Usage
-    
-### PhoneGap CLI
+[QuickBlox](https://quickblox.com) is a suite of communication features & data services (APIs, SDKs, code samples, admin panel, tutorials) which help digital agencies, mobile developers and publishers to add great communication functionality to smartphone applications like in Skype, WhatsApp, Viber.
 
-    $ phonegap create my-app --template phonegap-template-framework7
+Check out our [API Reference](https://quickblox.github.io/quickblox-javascript-sdk/docs/) for more detailed information about our SDK.
 
-### Cordova CLI
+# Install
 
-    $ cordova create my-app --template phonegap-template-framework7
-    
-### Desktop
+## Dependencies for browser
 
-In your browser, open the file:
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quickblox/2.12.0/quickblox.min.js"></script>
+```
 
-    /www/index.html
+## Bower and RequireJS
 
+If you use the bower package manager for your project, you can install the JS SDK through bower:
 
-  
+```
+bower install quickblox --save
+```
+
+When you use **RequireJS**, you are able to use QuickBlox as an AMD compliant module. The SDK supports the [UMD (Universal Module Definition)](https://github.com/umdjs/umd) pattern for JavaScript modules, so it is possible to use the SDK everywhere (as a global variable in the browser via an AMD module loader like RequireJS or as a CommonJS module in a Node.js environment).
+
+## Node.js and NPM integration
+
+Also you can use QuickBlox JavaScript SDK with server-side applications on NodeJS through the native node package. Just install the package in your application project like this:
+
+```
+npm install quickblox --save
+```
+
+And you're ready to go:
+
+```javascript
+var QB = require('quickblox');
+
+// OR to create many QB instances
+var QuickBlox = require('quickblox').QuickBlox;
+var QB1 = new QuickBlox();
+var QB2 = new QuickBlox();
+```
+
+## Download ZIP archive
+
+[QuickBlox JavaScript SDK, zip archive](https://github.com/QuickBlox/quickblox-javascript-sdk/archive/gh-pages.zip)
+
+# Browsers support
+
+| IE   | Firefox | Chrome | Safari | Opera | Node.js |
+|:----:|:-------:|:------:|:------:|:-----:|:-------:|
+| 10+  |  30+    | 30+    |  7.1+  |  23+  |    4+   |
+
+# Documentation
+
+You can look at it here https://quickblox.com/developers/Javascript
+
+# Questions and feedback
+
+Please raise questions, requests for help etc. via https://stackoverflow.com/questions/tagged/quickblox
+
+Feedback and suggestions for improvement always welcome :)
+
+# How to contribute
+See more information at [contributing.md](https://github.com/QuickBlox/quickblox-javascript-sdk/blob/gh-pages/.github/CONTRIBUTING.md)
+
+# License
+Apache 2.0

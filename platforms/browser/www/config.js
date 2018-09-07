@@ -1,7 +1,28 @@
 ;(function(window) {
-    'use strict';
+    var CONFIG = {
+        debug: true,
+        webrtc: {
+            answerTimeInterval: 30,
+            dialingTimeInterval: 5,
+            disconnectTimeInterval: 35,
+            statsReportTimeInterval: 5
+        }
+    };
 
-    const MESSAGES = {
+    var CREDENTIALS = {
+        'prod': {
+            'appId': 40718,
+            'authKey': 'AnB-JpA6r4y6RmS',
+            'authSecret': '3O7Sr5Pg4Qjexwn'
+        },
+        'test': {
+            'appId': 39854,
+            'authKey': 'JtensAa9y4AM5Yk',
+            'authSecret': 'AsDFwwwxpr3LN5w'
+        }
+    };
+
+    var MESSAGES = {
         'login': 'Login as any user on this computer and another user on another computer.',
         'create_session': 'Creating a session...',
         'connect': 'Connecting...',
@@ -14,74 +35,9 @@
         'no_internet': 'Please check your Internet connection and try again'
     };
 
-    /** Test server / app by defaults */
-    const creds = {
-        'appId': 73071,
-        'authKey': 'aSfzaUr5uRaarCk',
-        'authSecret': 'aFsMpBHdVSMuNFs'
-    };
-
-    const config = {
-        debug: true,
-        webrtc: {
-            answerTimeInterval: 30,
-            dialingTimeInterval: 5,
-            disconnectTimeInterval: 35,
-            statsReportTimeInterval: 5
-        }
-    };
-
-    /**
-     * Could set appCreds and endpoints throw URL string by search part
-     * ?appId={Number}&authKey={String}&authSecret={String}&endpoints.api={String}&endpoints.chat={String}
-     */
-
-    /**
-     * Get value of key from search string of url
-     * 
-     * @param  {string} q - name of query
-     * @returns {string|number} - value of query
-     */
-    function getQueryVar(q) {
-        var query = window.location.search.substring(1),
-            vars = query.split('&'),
-            answ = null;
-
-        vars.forEach(function(el, i){
-            var pair = el.split('=');
-
-            if(pair[0] === q) {
-                answ = pair[1];
-            }
-        });
-
-        return answ;
-    };
-
-    if(getQueryVar('appId')) {
-        const customCreds = {
-            'appId': getQueryVar('appId'),
-            'authKey': getQueryVar('authKey'),
-            'authSecret': getQueryVar('authSecret')
-        };
-
-        Object.assign(creds, customCreds);
-    }
-
-    if(getQueryVar('endpoints.api')) {
-        const customEndpoints = {
-            'endpoints': {
-                'api': getQueryVar('endpoints.api'),
-                'chat': getQueryVar('endpoints.chat')
-            }
-        }
-
-        Object.assign(config, customEndpoints);
-    }
-
     window.CONFIG = {
-        'CREDENTIALS': creds,
-        'APP_CONFIG': config,
+        'CREDENTIALS': CREDENTIALS,
+        'APP_CONFIG': CONFIG,
         'MESSAGES': MESSAGES
     };
 }(window));
