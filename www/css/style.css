@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+padding-top: constant(safe-area-inset-top)
+
 .decoration{
 	height:1px;
 	background-color:rgba(0,0,0,0.1);
