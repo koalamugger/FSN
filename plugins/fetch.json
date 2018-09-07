@@ -17,8 +17,8 @@
   },
   "cordova-plugin-statusbar": {
     "source": {
-      "type": "registry",
-      "id": "cordova-plugin-statusbar@~1.0.1"
+      "type": "local",
+      "path": "C:\\Users\\jpearson\\Desktop\\FSN-App\\FSN-Marketing-App\\FSN\\node_modules\\cordova-plugin-statusbar"
     },
     "is_top_level": true,
     "variables": {}
