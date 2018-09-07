@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="fsn.recruiter" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Device">
+        <param name="browser-package" value="Device" />
+    </feature>
     <name>FSN-Marketing-App</name>
     <description>
         A basic Framework7 template for PhoneGap.
@@ -15,34 +18,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="windows-identity-name" value="" />
-    <preference name="android-build-tool" value="gradle" />
-    <preference name="orientation" value="default" />
-    <preference name="fullscreen" value="true" />
-    <preference name="target-device" value="tablet" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="false" />
-    <preference name="stay-in-webview" value="true" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="true" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="FadeSplashScreen " value="true" />
-    <preference name="EnableViewportScale" value="false" />
-    <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <preference name="AllowInlineMediaPlayback" value="true" />
-    <preference name="BackupWebStorage" value="none" />
-    <preference name="TopActivityIndicator" value="gray" />
-    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
-    <preference name="KeyboardShrinksView " value="true" />
-    <preference name="HideKeyboardFormAccessoryBar" value="true" />
-    <preference name="SuppressesIncrementalRendering" value="false" />
-    <preference name="android-installLocation" value="auto" />
-    <preference name="SplashScreenDelay" value="2000" />
-    <preference name="ErrorUrl" value="null" />
-    <preference name="BackgroundColor" value="0x000000" />
-    <preference name="LoadingDialog" value="," />
-    <preference name="LoadUrlTimeoutValue" value="null" />
     <preference name="DisallowOverscroll" value="true" />
 </widget>
