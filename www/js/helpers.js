@@ -9,48 +9,6 @@
     };
     app.network = {};
 
-
-    /* [getQueryVar get value of key from search string of url]
-     * @param  {[string]} q [name of query]
-     * @return {[string]}   [value of query]
-     */
-    app.helpers.getQueryVar = function(q){
-        var query = window.location.search.substring(1),
-            vars = query.split('&'),
-            answ = false;
-
-        vars.forEach(function(el, i){
-            var pair = el.split('=');
-
-            if(pair[0] === q) {
-                answ = pair[1];
-            }
-        });
-
-        return answ;
-    };
-
-    app.helpers.isBytesReceivedChanges = function(userId, inboundrtp) {
-        var res = true,
-            inbBytesRec = inboundrtp ? inboundrtp.bytesReceived : 0;
-
-        if(!app.network[userId]) {
-            app.network[userId] = {
-              'bytesReceived': inbBytesRec
-            };
-        } else {
-            if(app.network[userId].bytesReceived >= inbBytesRec) {
-                res = false;
-            } else {
-                app.network[userId] = {
-                    'bytesReceived': inbBytesRec
-                };
-            }
-        }
-
-        return res;
-    };
-
     /**
      * [Set fixed of relative position on footer]
      */
@@ -84,6 +42,7 @@
             });
         } else {
             /** It's for groups call */
+
             $('.j-callee_status_' + userId).text(title);
         }
     };
@@ -120,7 +79,7 @@
           } else if(action === 'clear') {
               /** detachMediaStream take videoElementId */
               app.currentSession.detachMediaStream('remote_video_' + userId);
-              $video.removeClass('wait');
+              $video.parents('.j-callee').removeClass('wait');
           }
         }
     };
@@ -129,7 +88,7 @@
      * [getUui - generate a unique id]
      * @return {[string]} [a unique id]
      */
-    function _getUui() {
+    function _getUui(identifyAppId) {
         var navigator_info = window.navigator;
         var screen_info = window.screen;
         var uid = navigator_info.mimeTypes.length;
@@ -139,13 +98,14 @@
         uid += screen_info.height || '';
         uid += screen_info.width || '';
         uid += screen_info.pixelDepth || '';
-
+        uid += identifyAppId;
+        
         return uid;
     }
 
     app.helpers.join = function(data) {
         var userRequiredParams = {
-            'login': _getUui(),
+            'login': _getUui(CONFIG.CREDENTIALS.appId),
             'password': 'webAppPass'
         };
 
@@ -159,8 +119,8 @@
                         if(loginErr) {
                             /** Login failed, trying to create account */
                             QB.users.create({
-                                'login': _getUui(),
-                                'password': 'webAppPass',
+                                'login': userRequiredParams.login,
+                                'password': userRequiredParams.password,
                                 'full_name': data.username,
                                 'tag_list': data.room
                             }, function(createErr, createUser){
@@ -179,7 +139,7 @@
                             });
                         } else {
                             /** Update info */
-                            if(loginUser.user_tags !== data.room || loginUser.full_name !== data.username ) {
+                            if(loginUser.user_tags !== data.room || loginUser.full_name !== data.username) {
                                 QB.users.update(loginUser.id, {
                                     'full_name': data.username,
                                     'tag_list': data.room
@@ -234,4 +194,21 @@
             });
         });
     };
+
+    app.helpers.getUsersStatus = function(){
+        var users = {};
+
+        if(app.calleesAnwered.length){
+            users.accepted = app.calleesAnwered;
+        }
+
+        if(app.calleesRejected.length){
+            users.rejected = app.calleesRejected;
+        }
+
+        return users;
+    };
+
+
+
 }(window, window.QB));

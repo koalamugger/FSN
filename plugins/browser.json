@@ -7,20 +7,14 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-custom-config": {
-            "PACKAGE_NAME": "com.quickblox.cordova.video_chat"
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "fsn.recruiter"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.quickblox.cordova.video_chat"
+            "PACKAGE_NAME": "fsn.recruiter"
         },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.quickblox.cordova.video_chat"
-        },
-        "cordova-plugin-iosrtc": {
-            "PACKAGE_NAME": "com.quickblox.cordova.video_chat"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.quickblox.cordova.video_chat"
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "fsn.recruiter"
         }
     },
     "dependent_plugins": {}

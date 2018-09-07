@@ -107,6 +107,7 @@ b {
     }
 
 .inner {
+    position: relative;
     width: 90%;
     max-width: 890px;
     margin: 0 auto;
@@ -150,6 +151,7 @@ b {
 }
 
 .header__title {
+    position: relative;
     font-size: 26px;
     font-weight: 300;
     line-height: 35px;
@@ -158,6 +160,12 @@ b {
     .header__logo,
     .header__title {
         text-align: center;
+    }
+
+    .header_version {
+        position: absolute;
+        bottom: 100%;
+        right: 0;
     }
 
 @media all and (min-width: 780px) {
@@ -195,6 +203,14 @@ b {
 .footer__inner .fw-link {
     font-size: 15px;
     font-weight: 600;
+}
+
+.footer-config {
+    max-width: 90%;
+    margin: 0 auto 5px auto;
+
+    font-size: 11px;
+    word-wrap: break-word
 }
 
 /**
@@ -462,6 +478,7 @@ b {
     min-height: 300px;
     float: right;
     padding: 0 0 0 14px;
+    box-sizing: border-box;
 }
 
 .frames {
@@ -475,10 +492,14 @@ b {
     width: 135px;
 }
 
+.caller__ctrl{
+    height: 90px;
+}
+
 .caller__ctrl_btn {
     width: 100%;
-    padding: 10px 25px;
-
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
     font-size: 18px;
     font-weight: 600;
     color: #025fca;
@@ -489,8 +510,11 @@ b {
 
     transition: all .3s ease;
 }
-    .caller__ctrl_btn:before {
-        content: 'Start Call'
+    .caller__ctrl_btn.m-video_call:before {
+        content: 'Video Call'
+    }
+    .caller__ctrl_btn.m-audio_call:before {
+        content: 'Audio Call'
     }
     .caller__ctrl_btn:hover {
         background: #025fca;
@@ -506,6 +530,9 @@ b {
     .caller__ctrl_btn.hangup:hover {
         background: #ff2d55;
         color: #fff;
+    }
+    .caller__ctrl_btn:last-child {
+        margin-bottom: 0;
     }
 
 .caller__name {
@@ -570,7 +597,26 @@ b {
     }
 
 .caller__frames_fl {
-    margin: 30px 0 10px 0;
+    margin-top: 15px;
+}
+
+.caller__frames_bandwidth {
+    margin-top: 10px;
+}
+
+.caller__frames_media_source {
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid #cdcdcd;
+}
+
+.source_label {
+    padding: 5px 0 5px 5px;
+}
+
+.confirm_media {
+    margin-top: 10px;
 }
 
 /**
@@ -667,4 +713,26 @@ b {
     white-space: nowrap;
     font-size: 15px;
     line-height: 1.2;
+}
+
+.frames_callee__bitrate {
+    display: none;
+    position: absolute;
+    bottom: 28px;
+    right: 10px;
+    background: rgba(0,0,0, .3);
+    color: #fff;
+    width: calc(100% - 10px);
+    height: 15px;
+    line-height: 15px;
+    text-align: right;
+    padding: 0 1px 0 0;
+    font-size: 12px;
+}
+
+.sample_info {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #808080;
 }

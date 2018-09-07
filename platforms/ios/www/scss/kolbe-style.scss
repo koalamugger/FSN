@@ -1,0 +1,74 @@
+body {
+  background: #DA0138;
+  font-size: 14px;
+}
+
+.graphTest {
+  width: 300px;
+  margin: 100px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  
+  > div {
+    flex: 1 1 auto;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+  }
+}
+
+///
+$valueGood: #7ae166;
+$valueWarn: #d0a611;
+$valueBad: #f04343;
+//// 
+
+.gd {
+    
+  span {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    width: 10px;
+    height: 40px;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 10px;  
+    }
+  }
+
+  // These loops spit out the colors,
+  // I could probably clean these up
+  // Also setting the height to a "median" range
+  // to demonstrate different value heights
+  
+  @for $i from 0 through 52 {
+    &[data-value=r#{$i}] span:before {
+      height: 35%;
+      background: $valueBad;
+    }
+  }
+  
+  @for $i from 53 through 76 {
+    &[data-value=r#{$i}] span:before {
+      height: 65%;
+      background: $valueWarn;
+    }
+  }
+      
+  @for $i from 77 through 100 {
+    &[data-value=r#{$i}] span:before {
+	    height: 95%;
+      background: $valueGood;
+    }
+  }
+}
+
