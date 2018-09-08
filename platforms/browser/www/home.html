@@ -98,7 +98,7 @@ padding-top: constant(safe-area-inset-top)
                 <p>Learn more about FSN</p>
             </div></a>
             
-            <a type="button" value="Open" onClick="window.open('https://calendly.com/fsn-transitions', '_blank', 'location=yes'); return false;"> <div class="page-notifications confirmation-notification">
+            <a type="button" value="Open" onClick="window.open('https://calendly.com/fsn-transitions', '_self', 'location=yes'); return false;"> <div class="page-notifications confirmation-notification">
             	<h4>DROPBOX</h4>
                 <p>Custom Dropbox Sync Center!</p>
             </div></a>
@@ -120,7 +120,31 @@ padding-top: constant(safe-area-inset-top)
 
             </div>
 
+<script type="text/javascript">
+    .controller('MyCtrl', function($scope, $cordovaInAppBrowser) {
 
+   var options = {
+      location: 'yes',
+      clearcache: 'yes',
+      toolbar: 'no'
+   };
+
+   $scope.openBrowser = function() {
+      $cordovaInAppBrowser.open('http://ngcordova.com', '_blank', options)
+        
+      .then(function(event) {
+         // success
+      })
+        
+      .catch(function(event) {
+         // error
+      });
+   }
+})
+
+
+
+</script>
 <img style="width:100%;" src="images/HOME-BANNER-2.PNG">
     </div>
     
