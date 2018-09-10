@@ -23,7 +23,6 @@
         <preference name="target-device" value="tablet" />
         <preference name="webviewbounce" value="true" />
         <preference name="prerendered-icon" value="false" />
-        <preference name="stay-in-webview" value="true" />
         <preference name="ios-statusbarstyle" value="black-opaque" />
         <preference name="detect-data-types" value="true" />
         <preference name="exit-on-suspend" value="true" />
@@ -47,6 +46,9 @@
         <preference name="DisallowOverscroll" value="true" />
         <preference name="LoadingDialog" value="," />
         <preference name="LoadUrlTimeoutValue" value="null" />
+        <allow-navigation href="fsn-box*" />  
+        <allow-navigation href="calendly*" />  
+        <preference name="stay-in-webview" value="false" />
 
 
 
