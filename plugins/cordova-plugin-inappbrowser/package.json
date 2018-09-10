@@ -1,27 +1,23 @@
 {
-  "_from": "cordova-plugin-inappbrowser@3.0.0",
-  "_id": "cordova-plugin-inappbrowser@3.0.0",
+  "_from": "git+https://github.com/apache/cordova-plugin-inappbrowser.git",
+  "_id": "cordova-plugin-inappbrowser@3.0.1-dev",
   "_inBundle": false,
-  "_integrity": "sha1-1K4A02Z2IQdRBXrSWK5K1KkWGto=",
   "_location": "/cordova-plugin-inappbrowser",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-inappbrowser@3.0.0",
-    "name": "cordova-plugin-inappbrowser",
-    "escapedName": "cordova-plugin-inappbrowser",
-    "rawSpec": "3.0.0",
-    "saveSpec": null,
-    "fetchSpec": "3.0.0"
+    "type": "git",
+    "raw": "https://github.com/apache/cordova-plugin-inappbrowser",
+    "rawSpec": "https://github.com/apache/cordova-plugin-inappbrowser",
+    "saveSpec": "git+https://github.com/apache/cordova-plugin-inappbrowser.git",
+    "fetchSpec": "https://github.com/apache/cordova-plugin-inappbrowser.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-3.0.0.tgz",
-  "_shasum": "d4ae00d36676210751057ad258ae4ad4a9161ada",
-  "_spec": "cordova-plugin-inappbrowser@3.0.0",
+  "_resolved": "git+https://github.com/apache/cordova-plugin-inappbrowser.git#cf58b04097ad53151f4c456d0fef27dd5cecd966",
+  "_spec": "https://github.com/apache/cordova-plugin-inappbrowser",
   "_where": "C:\\Users\\jpearson\\Desktop\\FSN-App\\FSN-Marketing-App\\FSN",
   "author": {
     "name": "Apache Software Foundation"
@@ -86,5 +82,5 @@
     "test": "npm run eslint"
   },
   "types": "./types/index.d.ts",
-  "version": "3.0.0"
+  "version": "3.0.1-dev"
 }

@@ -50,7 +50,7 @@
   "cordova-plugin-inappbrowser": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-inappbrowser@3.0.0"
+      "id": "https://github.com/apache/cordova-plugin-inappbrowser"
     },
     "is_top_level": true,
     "variables": {}
