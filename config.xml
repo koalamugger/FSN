@@ -79,7 +79,7 @@
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/apache/cordova-plugin-inappbrowser" />
     <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     <platform name="ios">
  <icon src="file://C:\Users\jpearson\Desktop\FSN-App\FSN-Marketing-App\FSN\www\images\app-badge-small.png" width="76" height="76" />
