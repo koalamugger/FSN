@@ -46,9 +46,9 @@
         <preference name="DisallowOverscroll" value="true" />
         <preference name="LoadingDialog" value="," />
         <preference name="LoadUrlTimeoutValue" value="null" />
-        <allow-navigation href="fsn-box*" />  
-        <allow-navigation href="calendly*" />  
-        <preference name="stay-in-webview" value="false" />
+  
+        <allow-navigation href="*" />  
+        <preference name="stay-in-webview" value="true" />
 
 
 
