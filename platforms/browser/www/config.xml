@@ -19,13 +19,13 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="windows-identity-name" value="" />
+    <allow-navigation href="*" />
     <preference name="android-build-tool" value="gradle" />
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="true" />
     <preference name="target-device" value="tablet" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="false" />
-    <preference name="stay-in-webview" value="true" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="true" />
@@ -47,5 +47,6 @@
     <preference name="BackgroundColor" value="0x000000" />
     <preference name="LoadingDialog" value="," />
     <preference name="LoadUrlTimeoutValue" value="null" />
+    <preference name="stay-in-webview" value="true" />
     <preference name="DisallowOverscroll" value="true" />
 </widget>

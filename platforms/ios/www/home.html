@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.0, viewport-fit=cover"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -18,9 +18,10 @@
 
 
 <script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript" src="scripts/jqueryui.js"></script
-><script type="text/javascript" src="scripts/snap.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/snap.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+
 
 <script type="text/javascript">
 function swapStyleSheet(sheet){
@@ -37,6 +38,8 @@ function swapStyleSheet(sheet){
     background-size:51px 44px;
 }
 
+padding-top: constant(safe-area-inset-top)
+
 
 </style>
 
@@ -52,8 +55,8 @@ function swapStyleSheet(sheet){
     <div class="content-header">
         <a href="#" class="deploy-sidebar"></a>
         <!-- <img class="logo" src="images/misc/logo.png" width="92" alt="img"> -->
-        <a href="video.html" class="deploy-contact"></a>
-        <div class="clear"></div>
+        <a class="deploy-contact"  type="button" value="Open" onClick="window.open('www.fsn-box.com', '_self', 'location=yes'); return false;"></a>    
+                <div class="clear"></div>
     </div>
 
     <div id="sidebar" class="page-sidebar">
@@ -96,10 +99,10 @@ function swapStyleSheet(sheet){
                 <p>Learn more about FSN</p>
             </div></a>
             
-            <div class="page-notifications confirmation-notification">
+            <a type="button" value="Open" onClick="window.open('https://calendly.com/fsn-transitions', '_self', 'location=yes'); return false;"> <div class="page-notifications confirmation-notification">
             	<h4>DROPBOX</h4>
                 <p>Custom Dropbox Sync Center!</p>
-            </div>
+            </div></a>
             
             <div class="sidebar-decoration"></div>
             <p class="sidebar-copyright uppercase center-text">Copyright 2018<br> All rights reserved</p>
@@ -118,7 +121,31 @@ function swapStyleSheet(sheet){
 
             </div>
 
+<!-- <script type="text/javascript">
+    .controller('MyCtrl', function($scope, $cordovaInAppBrowser) {
 
+   var options = {
+      location: 'yes',
+      clearcache: 'yes',
+      toolbar: 'no'
+   };
+
+   $scope.openBrowser = function() {
+      $cordovaInAppBrowser.open('http://google.com', '_blank', options)
+        
+      .then(function(event) {
+         // success
+      })
+        
+      .catch(function(event) {
+         // error
+      });
+   }
+})
+
+
+
+</script> -->
 <img style="width:100%;" src="images/HOME-BANNER-2.PNG">
     </div>
     
