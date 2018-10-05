@@ -1,0 +1,29 @@
+html,body{height:100%}
+body{overflow:auto}
+html.redtail-page-scroll-locked 
+body{overflow:hidden}.redtail-inline-widget,
+.redtail-inline-widget *,.redtail-badge-widget,
+.redtail-badge-widget *,
+.redtail-overlay,
+.redtail-overlay *{font-size:16px;line-height:1.2em}
+.redtail-inline-widget iframe,
+.redtail-badge-widget iframe,
+.redtail-overlay iframe{display:inline;width:100%;height:100%}
+.redtail-popup-content{position:relative}
+.redtail-popup-content.mobile{-webkit-overflow-scrolling:touch;overflow-y:auto}
+.redtail-overlay{position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden;z-index:9999;background-color:#a5a5a5;background-color:rgba(31,31,31,0.4)}
+.redtail-overlay .redtail-close-overlay{position:absolute;top:0;left:0;right:0;bottom:0}
+.redtail-overlay .redtail-popup{redtail-sizing:border-redtail;position:absolute;top:50%;left:50%;-webkit-transform:translateY(-50%) translateX(-50%);transform:translateY(-50%) translateX(-50%);width:80%;min-width:901px;max-width:1000px;height:90%;max-height:680px;background-color:#fff}
+.redtail-overlay .redtail-popup .redtail-popup-content{height:100%}
+.redtail-overlay .redtail-popup .redtail-popup-close{position:absolute;top:0;right:-24px;color:#fff;font-size:24px;cursor:pointer}
+.redtail-overlay .redtail-popup .redtail-popup-close:before{content:"×"}
+.redtail-badge-widget{position:fixed;right:20px;bottom:115px;z-index:9995}
+.redtail-badge-widget .redtail-badge-content{display:table-cell;width:auto;height:45px;padding:0 30px;border-radius:25px;redtail-shadow:rgba(0,0,0,0.25) 0 2px 5px;font-family:sans-serif;text-align:center;vertical-align:middle;font-weight:bold;font-size:14px;color:#fff;cursor:pointer}
+.redtail-badge-widget .redtail-badge-content.white{color:#666a73}
+.redtail-badge-widget .redtail-badge-content span{display:block;font-size:12px;font-weight:100}@media screen and (max-width: 975px){.redtail-overlay .redtail-popup{position:fixed;top:50px;left:0;right:0;bottom:0;-webkit-transform:none;transform:none;width:100%;height:auto;min-width:0;max-height:none}
+.redtail-overlay .redtail-popup .redtail-popup-content{background-color:#fff}.redtail-overlay .redtail-popup .redtail-popup-close{top:-50px;right:14px;font-size:40px}}.spinner{position:absolute;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);text-align:center;z-index:-1}
+.spinner>
+
+div{display:inline-block;width:18px;height:18px;background-color:#e1e1e1;border-radius:50%/50%;vertical-align:middle;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.spinner .bounce1{-webkit-animation-delay:-0.32s;animation-delay:-0.32s}.spinner 
+.bounce2{-webkit-animation-delay:-0.16s;animation-delay:-0.16s}@-webkit-keyframes bouncedelay{0%, 80%, 100%{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes bouncedelay{0%, 80%, 100%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}
