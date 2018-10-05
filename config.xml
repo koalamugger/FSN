@@ -48,9 +48,6 @@
         <preference name="LoadUrlTimeoutValue" value="null" />
   
         <allow-navigation href="*" />  
-                <allow-navigation href="box.com" />  
-                                <allow-navigation href="calendly.com" /> 
-                                                <allow-navigation href="redtailtechnology.com" /> 
         <preference name="stay-in-webview" value="true" />
 
 
