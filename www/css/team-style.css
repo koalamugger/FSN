@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 .page-wrapper {
   font-family: 'Lato', sans-serif;
   min-height: 100vh;
   background-color: #F5F7FA;
+  max-height: 1024px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +16,7 @@
   justify-content: space-evenly;
   padding-left: calc(5% - 16px);
   padding-right: calc(5% - 16px);
+  height: 1024px;
   /* padding: 0 5%; */
 }
 

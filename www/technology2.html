@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.0, viewport-fit=cover"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+
+<title>FSN Mobile Framework v2.0.1</title>
+
+<link href="styles/style.css"           rel="stylesheet" type="text/css">
+<link href="styles/menus-variation.css"     		rel="stylesheet" type="text/css">
+<link href="styles/menus-background.css" rel="stylesheet" type="text/css" id="pagestyle">
+<link href="styles/framework.css" 		rel="stylesheet" type="text/css">
+
+    <link href="styles/value-button.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/snap.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+<script type="text/javascript">
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+
+
+
+ <style>
+
+        .numbers-notification{
+    background-image:url(../images/misc/numbers.png);
+    background-repeat:no-repeat;
+    background-size:51px 44px;
+}
+
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 80%;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+.modal-image
+{
+
+width:100%;
+
+}
+
+#trigger{
+  position: relative;
+  margin: 1em;
+  font-weight: 100;
+  padding: 1em 1.25em;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+padding-top: constant(safe-area-inset-top)
+
+</style>
+
+
+
+
+</head>
+<body>
+
+
+<div class="clear"></div>
+
+<div class="all-elements">
+    <div class="content-header">
+        <a href="#" class="deploy-sidebar"></a>
+        <!-- <img class="logo" src="images/misc/logo.png" width="92" alt="img"> --> 
+        <a class="deploy-contact" href="team.html" type="button" value="Open"></a>    
+                <div class="clear"></div>
+    </div>
+
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+            
+      <p class="sidebar-title">OUR SERVICES</p>
+            <div class="sidebar-decoration"></div>
+
+            <div class="sidebar-navigation">
+              <a href="business-consulting.html"   class="sidebar-icon sidebar-1"></a>
+                <a href="transitions.html"    class="sidebar-icon sidebar-2"></a>
+                <div class="clear"></div>
+                <a href="technology.html"    class="sidebar-icon sidebar-3"></a>
+                <a href="home.html" class="close-sidebar sidebar-icon sidebar-4"></a>
+                <a href="pcs.html"  class="sidebar-icon sidebar-5"></a>
+                <div class="clear"></div>
+                <a href="admin.html"   class="sidebar-icon sidebar-6"></a>
+                <a href="compliance.html"     class="sidebar-icon sidebar-7"></a>
+            </div>
+            
+    
+            
+      <div class="sidebar-decoration"></div>
+      <p class="sidebar-title">TOOLS</p>
+            <div class="sidebar-decoration"></div> 
+            
+              <a href="team.html"><div class="page-notifications warning-notification">
+              <h4>MEET THE TEAM</h4>
+              <br>
+            </div></a>
+            
+           <a href="value-new.html"> <div  class="page-notifications information-notification">
+              
+                <h4>JOINING FSN</h4>
+                <br>
+            </div> </a>
+            
+            <a href="redtail.html"><div class="page-notifications alert-notification">
+                <h4>News Room</h4>
+                <br>
+            </div></a>
+            
+             <a href="box.html"> <div class="page-notifications confirmation-notification">
+              <h4>BOX</h4>
+              <br>
+            </div></a>
+            
+            <div class="sidebar-decoration"></div>
+            <p class="sidebar-copyright uppercase center-text">Copyright 2018<br> All rights reserved</p>
+            <div style="height:60px"></div>
+        </div>
+    </div>
+
+    <div id="content" class="page-content">
+   		 <div style="height:30px "></div>
+         <div style="padding-top: 80px;" class="content">
+                        <div class="decoration"></div>
+    
+
+     <center> <h1 style="  font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-weight: 100;  font-size: 5vw; color: #d63333;">Technology Consulting</h1> </center>
+     <center><HR WIDTH="80%"></center>
+     <br>
+            <div class="decoration"></div>
+    
+            <div style="height:2px; "></div>
+
+
+      <p style="  font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.55vw; padding-left:100px; padding-right:100px; line-height: 1.19;">At The Financial Services Network, we offer a wide array of technology services to increase
+your productivity and trajectory during your transition. Our services include technology
+procurement, software procurement, and consultation, Branch Office Security Policy compliant
+configurations, in office technology setup, and LPL service installation and setup. Our approach
+is holistic and consultative which helps us understand where you and your staff may need
+training with your new technology.
+<br>
+<br>We start our engagement by determining what physical technology is needed for your
+office to run efficiently. After selecting from our curated technology bundles, we move on to
+software procurement. During the software procurement process, we will obtain licenses and
+subscriptions for all of the software needed to run a business including Office365, GoDaddy
+domain purchasing, domain hosting, adobe, etcetera.</br>
+
+<br>Upon delivery, your computers will be configured to meet the minimum standard of security
+according to LPL Financials branch office security policy, including whole disk encryption,
+password policies, lockout timers, and antivirus. As our final step, we will be in the office the
+day of transition to implement LPL Financials hosted technology and begin training you in your
+new office environment.</p>
+    </div>
+            <div class="decoration"></div>
+
+
+    <div style="  font-family: Gothamy, Gotham-Book, Arial, sans-serif; padding-left:100px; font-weight: 100; padding-top: 20px; width: 50%; float: left;" >
+      <h4 style="  font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; padding-bottom: 20px; color: #d63333;">1. Review Current Technology</h4>
+
+      <h4 style=" font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; padding-bottom: 20px; color: #d63333;">2. Discuss Technology Package</h4>
+
+      <h4 style=" font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; padding-bottom: 20px; color: #d63333;">3. Software and Cloud Purchases</h4>
+
+      <h4 style=" font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; font-weight: 100; padding-bottom: 20px; color: #d63333;">4. Purchase</h4>
+
+      <h4 style=" font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; padding-bottom: 20px; color: #d63333;">5. Implement</h4>
+
+      <h4 style=" font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; padding-bottom: 20px; color: #d63333;">6. Training Day and Finalize</h4>
+
+
+                       <a href="technology.html"> <button data-modal="#corp" class="trigger" style="  position: relative; margin: 0em; font-size: 28px;  font-weight: 200;padding: 1em 1.25em;text-align: center;width: 300px;border-radius: 5px; overflow: hidden; position: relative; z-index: 0; cursor: pointer; background-color:#d63333; color: #fcfcfc; padding-top: 15px; padding-bottom: 15px; margin-left: 100px; ">Back</button></a>
+
+    </div>
+
+
+
+
+
+
+
+<div   style="padding-right:80px; width: 50%; float: right; ">
+<center><img  style="width: 69%;"src="images\technology-services.PNG"></center>
+</div>
+    </div>
+    
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
