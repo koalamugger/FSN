@@ -66,6 +66,8 @@
         <allow-intent href="itms-apps:*" />
         <preference name="BackupWebStorage" value="none" />
 
+        <preference name="orientation" value="landscape" />
+        
   <config-file platform="ios" target="*-Info.plist" parent="NSCameraUsageDescription">
     <string>Use camera for video calling</string>
   </config-file>
@@ -74,6 +76,8 @@
   </config-file>
         
     </platform>
+
+    <preference name="orientation" value="landscape" />
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
@@ -91,5 +95,8 @@
   <config-file platform="ios" target="*-Info.plist" parent="NSMicrophoneUsageDescription">
     <string>Use microphone for video calling</string>
   </config-file>
+
+
+
 </platform>
 </widget>
