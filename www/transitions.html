@@ -17,8 +17,6 @@
 <link href="styles/menus-background.css" rel="stylesheet" type="text/css" id="pagestyle">
 <link href="styles/framework.css" 		rel="stylesheet" type="text/css">
 
-    <link href="styles/value-button.css" rel="stylesheet" type="text/css">
-
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/snap.js"></script>
@@ -29,91 +27,6 @@ function swapStyleSheet(sheet){
 	document.getElementById('pagestyle').setAttribute('href', sheet);
 }
 </script>
-
- <style>
-
-        .numbers-notification{
-    background-image:url(../images/misc/numbers.png);
-    background-repeat:no-repeat;
-    background-size:51px 44px;
-}
-
-
-.modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    z-index: 9999;
-}
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 1rem 1.5rem;
-    width: 50%;
-    border-radius: 0.5rem;
-}
-.close-button {
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
-}
-
-.close-button:hover {
-    background-color: darkgray;
-}
-.show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
-
-
-.modal-image
-{
-
-width:100%;
-
-}
-
-#trigger{
-  position: relative;
-  margin: 1em;
-  font-weight: 100;
-  padding: 1em 1.25em;
-  text-align: center;
-  width: 200px;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-
-
-
-
-
-padding-top: constant(safe-area-inset-top)
-
-</style>
-
-
 
 </head>
 <body>
@@ -223,37 +136,6 @@ leverage during your transition.</p>
       <h4 style=" font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; padding-bottom: 20px; color: #2da0ff;">Staff onboarding and new hire support</h4>
 
       <h4 style=" font-family: Gothamy, Gotham-Book, Arial, sans-serif; font-size: 1.8vw; font-weight: 100; padding-bottom: 20px; color: #2da0ff;">Consulting and oversight for practice acquisition, mergers and successions</h4>
-
-
-
-
-                        <button data-modal="#corp" class="trigger" style="  position: relative; margin: 0em; font-size: 28px;  font-weight: 200;padding: 1em 1.25em;text-align: center;width: 300px;border-radius: 5px; overflow: hidden; position: relative; z-index: 0; cursor: pointer; background-color:#1eb23e; color: #fcfcfc; padding-top: 15px; padding-bottom: 15px; margin-left: 100px; ">Timeline</button>
-                        <div id="corp" class="modal">
-                            <div class="modal-content">
-                                <span class="close-button">×</span>
-                                <img style="height:848px;"  class="modal-image" src="images/transitions-timeline.png">
-                            </div>
-                        </div>
-
-
-
-
-                        <script src="js/jquery-3.3.1.min.js"></script>
-                        <script>
-                            $('.trigger').click(function(e){
-                                e.preventDefault();
-
-                                var target = $(this).attr('data-modal');
-                                $(target).addClass('show-modal');
-                            });
-
-                            $('.close-button').click(function(e){
-                                $('.modal').removeClass('show-modal');
-                            })
-                        </script>
-
-
-
 
     </div>
 
