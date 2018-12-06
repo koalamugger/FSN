@@ -81,9 +81,9 @@
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0"/>
     <platform name="ios">
-    <icon src="file://C:\Users\jpearson\Desktop\FSN-App\FSN-Marketing-App\FSN\www\images\app-badge-small.png" width="76" height="76" />
-    <icon src="file://C:\Users\jpearson\Desktop\FSN-App\FSN-Marketing-App\FSN\www\images\app-badge-big.png" width="152" height="152" />
-    <splash src="file://C:\Users\jpearson\Desktop\FSN-App\FSN-Marketing-App\FSN\www\images\splash.png" width="2208" height="1242" /> 
+ <icon src="file://C:\Users\jpearson\Desktop\FSN-App\FSN-Marketing-App\FSN\www\images\app-badge-small.png" width="76" height="76" />
+        <icon src="file://C:\Users\jpearson\Desktop\FSN-App\FSN-Marketing-App\FSN\www\images\app-badge-big.png" width="152" height="152" />
+        <splash src="file://C:\Users\jpearson\Desktop\FSN-App\FSN-Marketing-App\FSN\www\images\splash.png" width="2208" height="1242" /> 
   ...
   <config-file platform="ios" target="*-Info.plist" parent="NSCameraUsageDescription">
     <string>Use camera for video calling</string>
